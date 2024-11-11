@@ -1,0 +1,34 @@
+.footer{
+    font-family:
+        space Grotesk,
+        monospace;
+    background: #000;
+    color: #fff;
+    padding: 30px 20px ;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.left h1{
+    font-weight: 500;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 40px;
+    gap: 25px;
+}
+
+.right ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
