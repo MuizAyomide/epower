@@ -1,0 +1,23 @@
+.navbar{
+    align-items: center;
+    margin: 10px 10px;
+    /* max-width: 600px; */
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu{
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
