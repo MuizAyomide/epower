@@ -1,0 +1,39 @@
+.contact{
+    font-family:
+    space Grotesk,
+    monospace;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact h1 {
+    font-weight: 500;
+}
+
+.contact p {
+    font-size: 1rem;
+    max-width: 50ch;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.contact_boxs{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+.contact_box{
+    padding: 40px;
+    background: #b3afaf;
+    border-radius: 20px;
+}
+
+.contact_box img{
+    width: 50px;
+}
+
+.contact_box p{
+   margin: 0;
+}
