@@ -1,0 +1,31 @@
+.display_box{
+
+}
+
+.box_container{
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box_container h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxs .box{
+    width: 200px;
+    height: auto;
+}
