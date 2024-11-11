@@ -1,0 +1,65 @@
+.offer {
+    font-family:
+        space Grotesk,
+        monospace;
+    text-align: center;
+}
+
+.offer h1 {
+    font-weight: 500;
+}
+
+.offer p {
+    font-size: 1rem;
+    max-width: 50ch;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.offers{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.offer-box{
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.offer-box img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+}
+
+.offer-box h3{
+    max-width: 25ch;
+}
+
+.box_1{
+    background: blue;
+}
+
+.box_2{
+    background: rgb(199, 94, 134);
+}
+
+.box_3{
+    background: rgb(26, 209, 102);
+}
+
+.box_4{
+    background: rgb(147, 147, 173);
+}
+
+.box_1:hover, .box_2:hover, .box_3:hover, .box_4:hover{
+    background: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
