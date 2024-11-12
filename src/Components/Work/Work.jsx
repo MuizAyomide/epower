@@ -12,6 +12,9 @@ const Work = () => {
       </p>
 
       <div className="work_links">
+
+        <div className="fir fir_work">
+
         <div className="work_link">
           <img src="Content-p-1080.webp" alt="" />
           <div className="work_desc">
@@ -29,13 +32,14 @@ const Work = () => {
                   viewBox="0 -960 960 960"
                   width="24px"
                   fill="#000"
-                >
+                  >
                   <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                 </svg>
               </span>
             </p>
           </div>
         </div>
+
         <div className="work_link">
           <img src="Movendi-p-1080.webp" alt="" />
           <div className="work_desc">
@@ -53,13 +57,18 @@ const Work = () => {
                   viewBox="0 -960 960 960"
                   width="24px"
                   fill="#000"
-                >
+                  >
                   <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                 </svg>
               </span>
             </p>
           </div>
         </div>
+                  </div>
+
+                  <div className="sec sec_work">
+
+
         <div className="work_link">
           <img src="Financial health-p-1080.webp" alt="" />
           <div className="work_desc">
@@ -84,6 +93,7 @@ const Work = () => {
             </p>
           </div>
         </div>
+
         <div className="work_link">
           <img src="GM-p-1080.webp" alt="" />
           <div className="work_desc">
@@ -101,13 +111,14 @@ const Work = () => {
                   viewBox="0 -960 960 960"
                   width="24px"
                   fill="#000"
-                >
+                  >
                   <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                 </svg>
               </span>
             </p>
           </div>
         </div>
+                  </div>
       </div>
     </div>
   );
