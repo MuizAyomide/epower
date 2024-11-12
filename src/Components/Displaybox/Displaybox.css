@@ -1,5 +1,5 @@
 .display_box{
-
+    font-family: space Grotesk, monospace;
 }
 
 .box_container{
@@ -22,10 +22,65 @@
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;    
 }
 
 .boxs .box{
-    width: 200px;
+    width: 120px;
     height: auto;
+    margin: 0;
 }
+
+
+/* xs */
+@media (min-width: 475px) {
+    
+
+    .boxs .box{
+        width: 180px;
+    }
+    
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+    .boxs .box{
+        width: 170px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .boxs .box{
+        width: 200px;
+    }
+    .box_container{
+    padding: 40px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+    .box_container h2{
+        font-size: 3rem;
+    }
+
+    .boxs{
+        justify-content: center;
+    }
+    .boxs .box{
+        width: 180px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .boxs .box{
+        width: 120px;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
