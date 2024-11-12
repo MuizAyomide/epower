@@ -12,6 +12,8 @@ const Offer = () => {
       </p>
 
       <div className="offers">
+        <div className="fir">
+
         <div className="offer-box box_1">
           <img src="Frame 567.webp" alt="" />
           <h3>Tailored AI Applications:</h3>
@@ -32,6 +34,9 @@ const Offer = () => {
             websites to mobile apps, we build products that deliver value.
           </p>
         </div>
+        </div>
+        <div className="sec">
+
         <div className="offer-box box_3">
           <img src="Frame 569.webp" alt="" />
 
@@ -54,6 +59,7 @@ const Offer = () => {
           </p>
         </div>
       </div>
+        </div>
     </div>
   );
 };
