@@ -15,12 +15,14 @@
     max-width: 50ch;
     font-weight: 400;
     padding-bottom: 20px;
+    margin: auto;
 }
 
 .contact_boxs{
     display: flex;
     flex-direction: column;
     text-align: left;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -37,3 +39,40 @@
 .contact_box p{
    margin: 0;
 }
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .contact_boxs{
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.contact_box{
+    flex: 1 ;
+}
+
+.contact h1 {
+    font-weight: 600;
+}
+
+.contact p {
+    font-size: 1.3rem;
+    max-width: 60ch;
+
+}
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
