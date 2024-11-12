@@ -4,6 +4,8 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
+        <div className='l_r'>
+
         <div className="left">
             <h1>
             Harnessing the  power of AI and no-code/low-code technologies
@@ -28,6 +30,7 @@ const Footer = () => {
             </div>
         </div>
 
+        </div>
         <p>© 2024 EpowerNG. All rights reserved.</p>
       
     </div>
