@@ -113,17 +113,37 @@
     }
 
     .home h1{
-        font-size: 3.5rem;
+        font-size: 3.8rem;
+        font-weight: 600;
         max-width: 640px;
     }
 
     .hero_image{
-    width: 500px;
+    width: 600px;
 }
 }
 
 /* xl */
-/* @media (min-width: 1280px) {} */
+@media (min-width: 1280px) {
+
+    .home h1{
+        font-size: 4.5rem;
+        font-weight: 700;
+        max-width: 640px;
+        line-height: 75px;
+    }
+
+
+    .hero_image{
+    width: 600px;
+}
+
+.hero_pattern{
+    width: 250px;
+    left: -100px;
+}
+
+}
 
 /* 2xl */
 /* @media (min-width: 1536px) {} */
