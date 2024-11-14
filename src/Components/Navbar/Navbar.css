@@ -48,6 +48,14 @@
 .mobile_bar button{
     border: 1px solid #000;
         background: #fff;
+        margin: auto;
+        width: 50%;
+}
+
+.big_logo{
+    display: none;
+    width: 50px;
+    cursor: pointer;
 }
 
 .close_menu{
@@ -81,8 +89,16 @@
         background: #fff;
     }
 
+    .mobile_bar{
+        display: none;
+    }
+
     .menu{
         display: none;
+    }
+
+    .big_logo{
+        display: block;
     }
 }
 
