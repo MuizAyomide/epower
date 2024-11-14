@@ -10,14 +10,14 @@ const Navbar = () => {
         {
           open === false ? 
           <img className="logo" src="/image 2.webp" alt="" />:
-          ''
+          <img className="big_logo" src="/image 2.webp" alt="" />
         }
         {open === true ? (
           <div className="mobile_bar">
             <div className="mobile_nav">
 
             <img className="nav_logo logo" src="/image 2.webp" alt="" />
-            <div className="close_menu menu" onClick={() => setOpen(false)}>
+            <div className="close_menu menu" onClick={() => setOpen(!open)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -29,6 +29,9 @@ const Navbar = () => {
               </svg>
                 </div>
             </div>
+            {/* <Link to="about" className="navbar-link">
+            About
+          </Link> */}
             <div className="list">What we do</div>
             <div className="list">Our works</div>
             <div className="list">Contact</div>
