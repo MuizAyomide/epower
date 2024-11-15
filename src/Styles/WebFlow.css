@@ -2,6 +2,8 @@
 .landing-image{
 
     animation: image_animation 1.5s ease 0s 1 alternate forwards;
+	/* animation-range: 700px; */
+	animation-timeline: view();
 }
 
 @keyframes image_animation {
@@ -49,18 +51,21 @@
 }
 
 h1, h2, h3, p{
-    animation: writeup 1.5s ease 0s 1 alternate forwards;
+	animation: writeup 2s ease 0s 1 normal forwards;
+	/* animation-timeline: view(); */
 
 }
 
 @keyframes writeup {
-	0% {
-		transform: scale(0.5);
-	}
-
-	100% {
-		transform: scale(1);
-	}
+		0% {
+			opacity: 0;
+			transform: translateX(-250px);
+		}
+	
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
 }
 
 /* animation: display_anim 2s ease 0s 1 alternate forwards; */
@@ -94,7 +99,7 @@ h1, h2, h3, p{
 
 .btn , .box{
 
-    animation: myAnim 2s ease 0s 1 normal forwards;
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnim {
@@ -102,27 +107,6 @@ h1, h2, h3, p{
 		animation-timing-function: ease-in;
 		opacity: 0;
 		transform: scale(0);
-	}
-
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: scale(1);
-	}
-
-	55% {
-		animation-timing-function: ease-in;
-		transform: scale(0.7);
-	}
-
-	72% {
-		animation-timing-function: ease-out;
-		transform: scale(1);
-	}
-
-	81% {
-		animation-timing-function: ease-in;
-		transform: scale(0.84);
 	}
 
 	89% {
