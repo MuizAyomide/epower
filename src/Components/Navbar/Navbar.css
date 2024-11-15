@@ -66,6 +66,10 @@
     display: none;
 }
 
+.list{
+    cursor: pointer;
+}
+
 /* xs */
 /* @media (min-width: 475px) {} */
 
