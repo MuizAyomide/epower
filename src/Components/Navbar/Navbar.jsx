@@ -1,12 +1,36 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    // Import the observer functionality here if needed
+    const Observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('nav_drop');// Add class when in view
+            } 
+            
+            
+        });
+    });
+
+    const animatedElements = document.querySelectorAll('.nav_animation');
+
+    animatedElements.forEach((el) => Observer.observe(el));
+
+
+    return () => {
+        animatedElements.forEach((el) => Observer.unobserve(el));
+    // Clean up observer on unmount
+    };
+}, []);
+
   return (
-    <div className="navbar container">
+    <div className="navbar container nav_animation">
       <div className="nav">
         {open === false ? (
           <img className="logo" src="/image 2.webp" alt="" />
