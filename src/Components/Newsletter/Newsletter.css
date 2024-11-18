@@ -30,24 +30,26 @@
     margin-top: 20px;
 }
 
-.hidden {
+.letter_animation {
     /* background: red; */
 }
       
 
 
-.show {
-    animation: writeup 2s ease 0s 1 normal forwards;    
+.show_letter {
+    animation: letter 2s ease 0s 1 normal forwards; 
+    animation-range: cover 200px;
+
 }
 
-@keyframes writeup {
-        0% {
-            opacity: 0;
-            transform: translateX(-250px);
-        }
-    
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
+@keyframes letter {
+	0% {
+		transform: scale(0);
+		transform-origin: 50% 100%;
+	}
+
+	100% {
+		transform: scale(1);
+		transform-origin: 50% 100%;
+	}
 }
