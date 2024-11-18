@@ -65,6 +65,8 @@
 
 .show_writeup{
     animation: write_up 2s ease 0s 1 normal forwards;
+    animation-range: cover 200px;
+
     
 }
 
@@ -87,6 +89,8 @@
 .show_image{
 
     animation: image_animation 1.5s ease 0s 1 alternate forwards;
+    animation-range: cover 200px;
+
 }
 
 @keyframes image_animation {
