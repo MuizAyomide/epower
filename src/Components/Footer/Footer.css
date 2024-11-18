@@ -32,6 +32,27 @@
     gap: 10px;
 }
 
+.footer_animation{
+
+}
+
+.show_footer{
+    animation: footer 2s ease 0s 1 normal forwards;
+    animation-range: cover 200px;
+
+}
+
+@keyframes footer {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 
 /* xs */
