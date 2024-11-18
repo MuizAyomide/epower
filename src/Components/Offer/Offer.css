@@ -74,6 +74,46 @@
 }
 
 
+.text_animation{
+
+}
+
+.show_text{
+	animation: text 1s ease 0s 1 normal forwards;
+
+}
+
+@keyframes text {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.boxs_animation{
+
+}
+
+.show_boxs{
+    animation: boxs 1s ease 0s 1 normal forwards;
+
+}
+
+@keyframes boxs {
+	0% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+
 /* xs */
 /* @media (min-width: 475px) {} */
 
