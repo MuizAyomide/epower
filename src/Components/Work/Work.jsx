@@ -1,5 +1,6 @@
 import React from "react";
 import "./Work.css";
+import { useEffect } from "react";
 
 const Work = () => {
 
@@ -8,7 +9,7 @@ const Work = () => {
     const writeUpObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('show_text'); 
+                entry.target.classList.add('show_texts'); 
             }
         });
     });
@@ -17,13 +18,13 @@ const Work = () => {
     const imageObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('show_boxs'); 
+                entry.target.classList.add('show_bold_image'); 
             }
         });
     });
 
-    const animatedElements = document.querySelectorAll('.text_animation');
-    const animatedImages = document.querySelectorAll('.boxs_animation');
+    const animatedElements = document.querySelectorAll('.texts_animation');
+    const animatedImages = document.querySelectorAll('.bold_image_animation');
 
     animatedElements.forEach((el) => writeUpObserver.observe(el));
     animatedImages.forEach((image) => imageObserver.observe(image));
@@ -37,8 +38,8 @@ const Work = () => {
   
   return (
     <div className="work container section">
-      <h1>Our works</h1>
-      <p>
+      <h1 className="texts_animation">Our works</h1>
+      <p className="texts_animation">
         Explore our portfolio of projects where technology meets practical
         application, illustrating our commitment to transforming businesses and
         communities for a digital-first future.
@@ -49,10 +50,10 @@ const Work = () => {
         <div className="fir fir_work">
 
         <div className="work_link">
-          <img src="Content-p-1080.webp" alt="" />
+          <img className="bold_image_animation" src="Content-p-1080.webp" alt="" />
           <div className="work_desc">
-            <h3>Content Spark:</h3>
-            <p>
+            <h3 className="texts_animation">Content Spark:</h3>
+            <p className="texts_animation">
               Generate viral social media content effortlessly with the power of
               AI
             </p>
@@ -74,10 +75,10 @@ const Work = () => {
         </div>
 
         <div className="work_link">
-          <img src="Movendi-p-1080.webp" alt="" />
+          <img className="bold_image_animation" src="Movendi-p-1080.webp" alt="" />
           <div className="work_desc">
-            <h3>Movendi International:</h3>
-            <p>
+            <h3 className="texts_animation">Movendi International:</h3>
+            <p className="texts_animation">
               We developed an educational app for Movendi, the premier global
               network for development through alcohol prevention.
             </p>
@@ -103,10 +104,10 @@ const Work = () => {
 
 
         <div className="work_link">
-          <img src="Financial health-p-1080.webp" alt="" />
+          <img className="bold_image_animation" src="Financial health-p-1080.webp" alt="" />
           <div className="work_desc">
-            <h3>Financial Health Checker:</h3>
-            <p>
+            <h3 className="texts_animation">Financial Health Checker:</h3>
+            <p className="texts_animation">
               Assess your financial health with detailed and personalized
               AI-driven feedback.
             </p>
@@ -128,10 +129,10 @@ const Work = () => {
         </div>
 
         <div className="work_link">
-          <img src="GM-p-1080.webp" alt="" />
+          <img className="bold_image_animation" src="GM-p-1080.webp" alt="" />
           <div className="work_desc">
-            <h3>Grant Master’s Website:</h3>
-            <p>
+            <h3 className="texts_animation">Grant Master’s Website:</h3>
+            <p className="texts_animation">
               We created a website and multiple web apps for Africa’s leading
               grant writing startup.
             </p>
