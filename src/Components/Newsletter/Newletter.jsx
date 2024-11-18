@@ -4,10 +4,29 @@ import "./Newsletter.css";
 
 const Newsletter = () => {
     
+    useEffect(() => {
+        // Observer for write-up elements
+        const writeUpObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show_letter'); 
+                }
+            });
+        });
+    
+        const animatedElements = document.querySelectorAll('.letter_animation');
+    
+        animatedElements.forEach((el) => writeUpObserver.observe(el));
+    
+        // Cleanup
+        return () => {
+            animatedElements.forEach((el) => writeUpObserver.unobserve(el));
+        };
+    }, []);
 
     return (
-        <div className="newsletter container section hidden">
-            <div className="letter">
+        <div className="newsletter container section ">
+            <div className="letter letter_animation">
                 <h1>Transform your business</h1>
                 <p>
                     Connect with Epower to leverage the potential of tailored AI and no-code
