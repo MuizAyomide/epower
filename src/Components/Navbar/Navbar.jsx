@@ -38,7 +38,7 @@ const Navbar = () => {
           <img className="big_logo" src="/image 2.webp" alt="" />
         )}
         {open === true ? (
-          <div className="mobile_bar">
+          <div className="mobile_bar nav_animation">
             <div className="mobile_nav">
               <img className="nav_logo logo" src="/image 2.webp" alt="" />
               <div className="close_menu menu" onClick={() => setOpen(!open)}>
