@@ -37,6 +37,7 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    
 }
 
 .mobile_nav{
@@ -64,6 +65,8 @@
 
 .nav_drop{
     animation: nav_drop 1s ease 0s 1 normal forwards;
+    animation-range: cover 200px;
+
 }
 
 @keyframes nav_drop {
