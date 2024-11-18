@@ -58,8 +58,24 @@
     cursor: pointer;
 }
 
-.close_menu{
+.nav_animation{
   
+}
+
+.nav_drop{
+    animation: nav_drop 1s ease 0s 1 normal forwards;
+}
+
+@keyframes nav_drop {
+	0% {
+		transform: scaleY(0.4);
+		transform-origin: 100% 0%;
+	}
+
+	100% {
+		transform: scaleY(1);
+		transform-origin: 100% 0%;
+	}
 }
 
 .desk_bar{
