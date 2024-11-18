@@ -2,6 +2,39 @@ import React from "react";
 import "./Work.css";
 
 const Work = () => {
+
+  useEffect(() => {
+    // Observer for write-up elements
+    const writeUpObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show_text'); 
+            }
+        });
+    });
+
+    // Observer for image elements
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show_boxs'); 
+            }
+        });
+    });
+
+    const animatedElements = document.querySelectorAll('.text_animation');
+    const animatedImages = document.querySelectorAll('.boxs_animation');
+
+    animatedElements.forEach((el) => writeUpObserver.observe(el));
+    animatedImages.forEach((image) => imageObserver.observe(image));
+
+    // Cleanup
+    return () => {
+        animatedElements.forEach((el) => writeUpObserver.unobserve(el));
+        animatedImages.forEach((image) => imageObserver.unobserve(image));
+    };
+}, []);
+  
   return (
     <div className="work container section">
       <h1>Our works</h1>
