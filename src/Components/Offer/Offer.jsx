@@ -40,6 +40,7 @@ const Offer = () => {
     <div className="offer container section">
       <h1 className="text_animation">What we offer</h1>
       <p className="text_animation">
+        
         Our strategic solutions are crafted to empower businesses,
         organizations, and individuals, enabling them to thrive in a
         digital-first world.
