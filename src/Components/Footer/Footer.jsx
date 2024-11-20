@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 const Footer = () => {
 
     useEffect(() => {
+        
         // Observer for write-up elements
         const writeUpObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
