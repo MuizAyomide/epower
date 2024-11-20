@@ -37,7 +37,6 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    
 }
 
 .mobile_nav{
@@ -51,6 +50,7 @@
         background: #fff;
         margin: auto;
         width: 50%;
+        
 }
 
 .big_logo{
