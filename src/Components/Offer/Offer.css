@@ -104,8 +104,6 @@
 .show_boxs{
     animation: boxs 1s ease 0s 1 normal forwards;
     animation-range: cover 200px;
-
-
 }
 
 @keyframes boxs {
