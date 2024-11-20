@@ -62,7 +62,9 @@ const Navbar = () => {
           to="offer" className="list">
             What we do
           </Link>
+
           <Link
+          
           smooth={true}
           duration={500}
           to="work" className="list">
