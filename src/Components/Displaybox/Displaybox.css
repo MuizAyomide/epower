@@ -58,7 +58,6 @@
 .show_header{
 	animation: header 2s ease 0s 1 normal forwards;
     animation-range: cover 200px;
-    
 }
 
 @keyframes header {
